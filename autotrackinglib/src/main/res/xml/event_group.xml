@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<events descrption="自动化埋点事件配置文档">
+    <event
+        descrption="事件1"
+        id="10010"
+        type="1">
+        <parameters descption="map 入参">
+            <parameter
+                key="what"
+                value="apps" />
+            <parameter
+                key="kiss"
+                value="me" />
+        </parameters>
+    </event>
+    <event
+        descrption="事件2"
+        id="10011"
+        type="1">
+        <parameters descption="map 入参">
+            <parameter
+                key="what"
+                value="apps" />
+            <parameter
+                key="kiss"
+                value="me" />
+        </parameters>
+    </event>
+    <event
+        descrption="事件3"
+        id="10012"
+        type="1">
+        <parameters descption="map 入参">
+            <parameter
+                key="what"
+                value="apps" />
+            <parameter
+                key="kiss"
+                value="me" />
+        </parameters>
+    </event>
+</events>

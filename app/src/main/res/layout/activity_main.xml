@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="zyf.asos.statistic.demo.zyf.asos.tracking.demo.MainActivity">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="23dp"
+        android:tag="10010"
+        android:text="除魔" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="20dp"
+        android:tag="10011"
+        android:text="卫道" />
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="23dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:tag="10012">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="仗剑"
+            android:textColor="#fcfcfc" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="43dp"
+        android:background="@color/colorAccent">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="走天涯"
+            android:textColor="#fcfcfc" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="28dp"
+        android:text="大菠萝"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fab_action"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom|end"-->
+    <!--android:layout_margin="25dp"-->
+    <!--android:src="@android:drawable/ic_menu_compass" />-->
+
+</LinearLayout>

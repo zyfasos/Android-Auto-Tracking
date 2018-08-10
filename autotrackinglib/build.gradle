@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+def lib_archivesBaseName = 'tracking-lib'
+def lib_version = '1.0'
+
+def buildTime = new Date().format("yyyy-MM-dd'T'HHmmss", TimeZone.getTimeZone("GMT+08"))
+
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        minSdkVersion 14
+
+        project.archivesBaseName = lib_archivesBaseName
+        project.version = lib_version
+
+        buildConfigField "String", "FRAMWORK_VERSION", "\"${version}\""
+        buildConfigField "String", "BUILD_TIME", "\"${buildTime}\""
+        buildConfigField "long", "BUILD_TIME_LONG", "${System.currentTimeMillis()}L"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    libraryVariants.all { variant ->
+        variant.outputs.all {
+            def fileName = "${archivesBaseName}-${version}.aar"
+            outputFileName = fileName
+        }
+    }
+
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'org.aspectj:aspectjrt:1.8.9'
+}
